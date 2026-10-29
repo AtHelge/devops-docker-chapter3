@@ -29,8 +29,7 @@ services:
       - POSTGRES_PASSWORD=postgres
     restart: unless-stopped
     volumes:
-      - database:/var/lib/postgresql
+      - ./database:/var/lib/postgresql
 
-volumes:
-  database:
+
 
